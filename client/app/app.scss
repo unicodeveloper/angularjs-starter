@@ -1,6 +1,116 @@
-@import 'common/common';
+body {
+  font-family: avenir next;
+}
 
-.app {
-  height: 100%;
-  background-color: $lightBgColor;
+h3 {
+  font-size: 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navigation {
+  margin-top: 5%;
+}
+
+.navigation a {
+  color: #9B9B9B;
+  margin-left: 20px
+}
+
+.navigation ul {
+  list-style-type: none;
+  margin-bottom: 0;
+}
+
+.navigation ul li {
+  display: inline;
+  font-size: 18px;
+  vertical-align: bottom;
+}
+
+hr {
+  width: 100%;
+  margin: 5px 5px 25px 5px;
+
+}
+
+li .heading {
+  font-size: 48px;
+  color: #333333;
+  font-weight: 500;
+  margin-left: 0px
+}
+
+.medium-height {
+  height: 15em
+}
+
+ul .inline {
+  display: inline
+}
+
+.tagline {
+  font-size: 22px;
+  width: 550px;
+  margin-top: 40px;
+}
+
+select#submission_event_instance_id {
+  display: block;
+}
+
+#edit-submission {
+  font-size: 11px;
+}
+
+.g-recaptcha {
+  margin-bottom: 1.5rem;
+}
+
+/**
+ * .fieldset redeclares some Normalize styles in a .fieldset class
+ * so they can be used to override Skeleton styles
+ */
+
+fieldset.fieldset {
+  border: 1px solid #c0c0c0;
+  border-radius: 3px;
+  margin: 0 2px;
+  margin-bottom: 15px;
+  padding: 0.5em 0.8em 0.75em;
+}
+
+fieldset.fieldset legend {
+  border: 0; /* 1 */
+  padding: .2em;
+}
+
+@media only screen and (min-width: 1000px) {
+  .align-right {
+    position: absolute;
+    right: 0px;
+    top: 25px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .navigation ul li {
+    display: block;
+    margin-right: 0;
+  }
+
+  .navigation a {
+    margin-left: 0px;
+  }
+
+  .tagline {
+    width: 100%
+  }
+}
+
+.speaker {
+    margin-bottom: 8px;
+    list-style-type: none;
 }
