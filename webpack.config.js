@@ -10,7 +10,23 @@ module.exports = {
        { test: /\.js$/, exclude: [/app\/lib/, /node_modules/], loader: 'ng-annotate!babel' },
        { test: /\.html$/, loader: 'raw' },
        { test: /\.scss$/, loader: 'style!css?sourceMap!sass?sourceMap' },
-       { test: /\.css$/, loader: 'style!css' }
+       { test: /\.css$/, loader: 'style!css' },
+       {
+           test   : /\.woff/,
+           loader : require.resolve("url-loader") + '?prefix=font/&limit=10000&mimetype=application/font-woff&name=assets/[hash].[ext]'
+       },
+       {
+          test   : /\.ttf/,
+          loader : require.resolve("file-loader") + '?prefix=font/&name=assets/[hash].[ext]'
+       },
+       {
+          test   : /\.eot/,
+          loader : require.resolve("file-loader") + '?prefix=font/&name=assets/[hash].[ext]'
+       },
+       {
+          test   : /\.svg/,
+          loader : require.resolve("file-loader") + '?prefix=font/&name=assets/[hash].[ext]'
+       },
     ]
   },
   plugins: [
