@@ -1,5 +1,5 @@
 {
-  "name": "ng6-starter",
+  "name": "angularjs-starter",
   "version": "0.0.1",
   "description": "Starter for Angular + ES6 + (Webpack or JSPM)",
   "main": "index.js",
@@ -59,14 +59,14 @@
     "test": "karma start"
   },
   "keywords": [
-    "angular",
     "webpack",
-    "es6"
+    "es6",
+    "angularjs",
+    "angular1.5",
+    "angular1.5+"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/angularclass/NG6-starter.git"
-  },
-  "author": "AngularClass",
-  "license": "Apache-2.0"
+    "url": "https://github.com/unicodeveloper/angularjs-starter.git"
+  }
 }
